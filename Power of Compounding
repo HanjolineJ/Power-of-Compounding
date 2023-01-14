@@ -1,0 +1,33 @@
+    print ("Time to calculate simple and compound interest")#used this print statement as an intoduction
+    print ("simple interest first")# used this print statement as a start for simple interest first
+    print; s = float (input("Enter a value for the principal"))
+    #used a float as a way for the user to a input value for the principal 
+    print; i = float(input("Enter a vaule for the rate "))
+    #used a float as a way for the user to a input value for the rate
+    print; m = float(input("Enter a vaule for time "))
+    #used a float as a way for the user to a input value for the time
+    simple = ( s * (i /100)* m)
+    #used the floats to input into simple interest equation
+    work = simple + s
+    #used another variable to add the interest to the princpial
+    print ('Your simple interest is {} ' ,format(simple,  '.3f' ))
+    #printed the value simple interest
+    print (' Your total amount is  {}', format (work, '.3f' ) )
+    #printed the simple interest added to the principal along with the .3f format to get decimal format
+simple_interest()
+
+def compound_interest():
+    print (" now compound interest ") #used this print statement as an intoduction
+    print; c = float(input("Enter a value for principal "))
+    #used a float as a way for the user to a input value for the principal 
+    print; o = float(input("Enter a vaule for the rate "))
+    #used a float as a way for the user to a input value for the rate
+    print; m = float(input("Enter a vaule for time "))
+    #used a float as a way for the user to a input value for the time
+    print; p = float(input("Enter a vaule for number its compounded per year "))
+    #used a float as a way for the user to a input value for the number of times compounded per year
+    compound = ((c * (1+((o/100)/p))**m))
+    #used the floats to input into compound interest equation
+    print ('Your compound interest is {} ' ,format(compound,  '.3f' ))
+    #printed the value compound interest along with the .3f format to get the decimal format
+compound_interest()
